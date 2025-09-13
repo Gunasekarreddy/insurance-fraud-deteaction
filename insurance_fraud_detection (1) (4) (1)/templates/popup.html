@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>popup</title>
+    <link rel="stylesheet" href="../static/css/popup.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/popup.css') }}">
+
+</head>
+
+<body>
+    <div class="container">
+        <!-- <button type="submit" class="btn" onclick="openPopup()">
+            submit
+        </button> -->
+        <div class="popup" id="popup">
+            <img id="imagetag" src={{pmsgs}} alt="">
+            <h2>{{Ack}}</h2>
+            <p>{{msgs}}</p>
+            <a class="ok" type="submit" href="{{url_for('upload_file')}}">ok</a>
+        </div>
+
+    </div>
+    <!-- <script>
+        var popupmsg = '{{pmsgs}}'
+        if (popupmsg == "correct") {
+            document.getElementById("imagetag").src = "https://freepngimg.com/save/27880-green-tick-clipart/1400x1600";
+        }
+        if (popupmsg == "wrong") {
+            document.getElementById("imagetag").src = "https://www.kindpng.com/picc/m/413-4131735_transparent-tick-mark-png-transparent-background-transparent-background.png";
+        }
+
+    </script> -->
+</body>
+
+</html>

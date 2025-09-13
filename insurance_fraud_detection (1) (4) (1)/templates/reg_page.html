@@ -1,0 +1,278 @@
+
+
+<!DOCTYPE html>
+<!--=== Coding by CodingLab | www.codinglabweb.com === -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/reg_page.css') }}">
+    <link rel="stylesheet" href="../static/css/reg_page.css">
+
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!--<title>Responsive Regisration Form </title>-->
+</head>
+
+<body>
+    <div class="container">
+        <header>Registration</header>
+		<a id="logout" href="{{ url_for('logout') }}">logout</a>
+        <form action="/claimcheck" method="post">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">Policy Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Months As Customer</label>
+                            <input type="text" placeholder="Enter Months As Customer" required name="1">
+                        </div>
+                        <div class="input-field">
+                            <label>Age</label>
+                            <input type="text" placeholder="Enter your Age" required name="2">
+                        </div>
+                        <div class="input-field">
+                            <label>Policy Number</label>
+                            <input type="text" placeholder="Enter your Policy Number" required name="3">
+                        </div>
+                        <div class="input-field">
+                            <label>Policy Bind Date</label>
+                            <input type="date" placeholder="Enter Policy Bind Date" required name="4">
+                        </div>
+                        <div class="input-field">
+                            <label>Policy State</label>
+                            <input type="text" placeholder="Enter Policy State" required name="5">
+                        </div>
+                        <div class="input-field">
+                            <label>Policy Csl</label>
+                            <input type="text" placeholder="Enter Policy Csl" required name="6">
+                        </div>
+
+                        <div class="input-field">
+                            <label>Policy Deductable</label>
+                            <input type="text" placeholder="Enter Policy Deductable" required name="7">
+                        </div>
+
+                        <div class="input-field">
+                            <label>Policy Annual Premium</label>
+                            <input type="text" placeholder="Enter Policy Annual Premium" required name="8">
+                        </div>
+
+                        <div class="input-field">
+                            <label>Umbrella Limit</label>
+                            <input type="text" placeholder="Enter Umbrella Limit" required name="9">
+                        </div>
+
+                        <div class="input-field">
+                            <label>Insured Zip</label>
+                            <input type="text" placeholder="Enter Insured Zip" required name="10">
+                        </div>
+                        <div class="input-field">
+                            <label>Insured Sex</label>
+                            <select required name="11">
+                                <option disabled selected>Select Insured Sex</option>
+                                <option>MALE</option>
+                                <option>FEMALE</option>
+                            </select>
+                        </div>
+                        <div class="input-field">
+                            <label>Insured Education Level</label>
+                            <input type="text" placeholder="Enter Insured Education Level" required name="12">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details ID">
+                    <span class="title">Identity Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Insured Occupation</label>
+                            <input type="text" placeholder="Enter Insured Occupation" required name="13">
+                        </div>
+                        <div class="input-field">
+                            <label>Insured Hobbies</label>
+                            <input type="text" placeholder="Enter Insured Hobbies" required name="14">
+                        </div>
+                        <div class="input-field">
+                            <label>Insured Relationship</label>
+                            <input type="text" placeholder="Enter Insured Relationship" required name="15">
+                        </div>
+
+                        <div class="input-field">
+                            <label>Capital Gains</label>
+                            <input type="text" placeholder="Enter Capital Gains" required name="16">
+                        </div>
+
+                        <div class="input-field">
+                            <label>Capital Loss</label>
+                            <input type="text" placeholder="Enter Capital Loss" required name="17">
+                        </div>
+
+                        <div class="input-field">
+                            <label>Incident Date</label>
+                            <input type="date" placeholder="Enter Incident Date" required name="18">
+                        </div>
+
+                        <div class="input-field">
+                            <label>Incident Type</label>
+                            <input type="text" placeholder="Enter Incident Type" required name="19">
+                        </div>
+
+                        <div class="input-field">
+                            <label>Collision Type</label>
+                            <input type="text" placeholder="Enter Collision Type" required name="20">
+                        </div>
+                        <div class="input-field">
+                            <label>Incident Severity</label>
+                            <input type="text" placeholder="Enter Incident Severity" required name="21">
+                        </div>
+                    </div>
+
+                    <button class="nextBtn">
+                        <span class="btnText">Next</span>
+                        <i class="uil uil-navigator"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="form second">
+                <div class="details address">
+                    <span class="title">Details</span>
+
+                    <div class="fields">
+
+
+                        <div class="input-field">
+                            <label>Authorities Contacted</label>
+                            <input type="text" placeholder="Enter Authorities Contacted" required name="22">
+                        </div>
+
+                        <div class="input-field">
+                            <label>Incident State</label>
+                            <input type="text" placeholder="Enter Incident State" required name="23">
+                        </div>
+                        <div class="input-field">
+                            <label>Incident City</label>
+                            <input type="text" placeholder="Enter Incident City" required name="24">
+                        </div>
+                        <div class="input-field">
+                            <label>Incident Location</label>
+                            <input type="text" placeholder="Enter Incident Location" required name="25">
+                        </div>
+                        <div class="input-field">
+                            <label>Incident Hour of The Day</label>
+                            <input type="text" placeholder="Enter Incident Hour of The Day" required name="26">
+                        </div>
+
+                        <div class="input-field">
+                            <label>No of Vehicles Involved</label>
+                            <input type="text" placeholder="Enter No of Vehicles Involved" required name="27">
+                        </div>
+
+                        <div class="input-field">
+                            <label>Property Damage</label>
+                            <select required name="28">
+                                <option disabled selected>Select Property Damage</option>
+                                <option>YES</option>
+                                <option>NO</option>
+                                <option>?</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Bodily Injuries</label>
+                            <input type="text" placeholder="Enter Bodily Injuries" required name="29">
+                        </div>
+
+                        <div class="input-field">
+                            <label>Witnesses</label>
+                            <input type="text" placeholder="Enter Witnesses" required name="30">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details family">
+                    <span class="title">Vehicle Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Police Report Available</label>
+                            <select required name="31">
+                                <option disabled selected>Select Police Report Available</option>
+                                <option>YES</option>
+                                <option>NO</option>
+                                <option>?</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Total Claim Amount</label>
+                            <input type="text" placeholder="Enter Total Claim Amount" required name="32">
+                        </div>
+
+                        <div class="input-field">
+                            <label>Injury Claim</label>
+                            <input type="text" placeholder="Enter Injury Claim" required name="33">
+                        </div>
+
+                        <div class="input-field">
+                            <label>Property Claim</label>
+                            <input type="text" placeholder="Enter Property Claim" required name="34">
+                        </div>
+                        <div class="input-field">
+                            <label>Vehicle Claim</label>
+                            <input type="text" placeholder="Enter Vehicle Claim" required name="35">
+                        </div>
+                        <div class="input-field">
+                            <label>Auto Make</label>
+                            <input type="text" placeholder="Enter Auto Make" required name="36">
+                        </div>
+                        <div class="input-field">
+                            <label>Auto Model</label>
+                            <input type="text" placeholder="Enter Auto Model" required name="37">
+                        </div>
+
+                        <div class="input-field">
+                            <label>Auto Year</label>
+                            <input type="text" placeholder="Enter Auto Year" required name="38">
+                        </div>
+
+                        <div class="input-field" id="Select_Fraud_Reported">
+                            <label>Fraud Reported</label>
+                            <select required name="39">
+                                <option disabled selected>Select Fraud Reported</option>
+                                <option>Yes</option>
+                                <option>No</option>
+
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="buttons">
+                        <div class="backBtn">
+                            <i class="uil uil-navigator"></i>
+                            <span class="btnText">Back</span>
+                        </div>
+
+                        <button class="sumbit" type="submit">
+                            <span class="btnText">Submit</span>
+                            <i class="uil uil-navigator"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="../static/js/reg_page.js"></script>
+    <script src="{{ url_for('static', filename='js/reg_page.js' ) }}"></script>
+</body>
+
+</html>

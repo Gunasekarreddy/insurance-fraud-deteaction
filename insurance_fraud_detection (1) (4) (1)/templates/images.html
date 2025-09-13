@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            box-sizing: border-box;
+            background-color: rgb(152, 163, 163);
+        }
+
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 25px;
+            text-align: center;
+
+        }
+
+        /* Clearfix (clear floats) */
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+            text-align: center;
+        }
+
+        img {
+            border-radius: 15px;
+            height: 370px;
+        }
+
+        label {
+            padding-top: 20px;
+            font-weight: bold;
+            text-transform: capitalize;
+            font-size: 25px;
+            color: rgb(18, 56, 3);
+            text-align: center;
+            display: inline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row">
+
+        <div class="column">
+            <!-- {{ url_for('static', filename='/Image/relation.png')}} -->
+            <div>
+                <label for="">gender</label>
+                <img src="{{ url_for('static', filename='Image/gender.png') }}" style="width:100%">
+            </div>
+        </div>
+
+        <div class="column">
+            <div>
+                <label for="">authorities contacted</label>
+                <img src="{{ url_for('static', filename='/Image/auth.png')}}" style="width:100%">
+            </div>
+        </div>
+
+        <div class="column">
+            <div>
+                <label for="">fraud reported</label>
+                <img src="{{ url_for('static', filename='/Image/fraudreported.png')}}" style="width:100%">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+
+        <div class="column">
+            <div>
+                <label for="">totalclaim</label>
+                <img src="{{ url_for('static', filename='/Image/totalclaim.png')}}" style="width:100%">
+            </div>
+        </div>
+        <div class="column">
+            <div>
+                <label for="">police report</label>
+                <img src="{{ url_for('static', filename='/Image/policereport.png')}}" style="width:100%">
+            </div>
+        </div>
+
+        <div class="column">
+            <div>
+                <label for="">claim relation</label>
+                <img src="{{ url_for('static', filename='/Image/relation.png')}}" style="width:100%">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+
+
+
+    </div>
+
+</body>
+
+</html>

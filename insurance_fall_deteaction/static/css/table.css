@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin-top: 2%;
+    background-image: linear-gradient(rgba(201, 188, 188, 0.4), rgba(0, 0, 0, 0.4)), url(../img/bg.png);
+    background-size: cover;
+    background-repeat: repeat;
+}
+
+#snackbar-container {
+    position: fixed;
+    top: 6%;
+    right: 40%;
+    width: 400px;
+    max-height: 400px !important;
+    display: flex;
+    flex-direction: column;
+}
+
+.snackbar span {
+    float: right;
+    cursor: pointer;
+}
+
+.error {
+    background-color: rgb(194, 99, 99);
+}
+
+.success {
+    background-color: rgb(131, 207, 131);
+}
+
+.info {
+    background-color: dodgerblue;
+}
+
+.warning {
+    background-color: rgb(216, 202, 119);
+    color: black;
+}
+
+
+
+.fadeout {
+    animation: fade-out 1s ease 2s forwards;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
